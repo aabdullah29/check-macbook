@@ -154,6 +154,9 @@ The 2022 13-inch M2 MacBook Pro has a **13.3-inch 2560×1600 Retina IPS display*
 Apple specifications:
 https://support.apple.com/en-ie/111869
 
+Dead-pixel check:
+https://displaytech.org/en/tests/dead.pixel.htm
+
 ## White screen
 
 Display a completely white image.

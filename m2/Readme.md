@@ -3,14 +3,53 @@
 Save the separate script from this repository as:
 
 ```text
-macbook-m2-audit.sh
+macbook-audit.sh
 ```
 
 Then run:
 
 ```bash
-chmod +x macbook-m2-audit.sh
-./macbook-m2-audit.sh
+chmod +x macbook-audit.sh
+./macbook-audit.sh
+```
+
+For save report in text file run:
+
+```bash
+chmod +x macbook-audit.sh
+./macbook-audit.sh | tee "macbook-audit-$(date '+%Y-%m-%d-%H%M%S').txt"
+```
+
+For Summary run:
+Note: change this info with the expected info before run
+`EXPECTED_CHIP="M2" EXPECTED_MEMORY_GB=24 EXPECTED_STORAGE_GB=512`
+
+```bash
+chmod +x macbook-audit-v2.sh
+EXPECTED_CHIP="M2" EXPECTED_MEMORY_GB=24 EXPECTED_STORAGE_GB=512 ./macbook-audit-v2.sh
+```
+
+and
+
+```bash
+chmod +x macbook-audit-v3.sh
+EXPECTED_CHIP="M2" EXPECTED_MEMORY_GB=24 EXPECTED_STORAGE_GB=512 ./macbook-audit-v3.sh
+```
+
+For save the summary in text file run:
+
+```bash
+chmod +x macbook-audit-v2.sh
+EXPECTED_CHIP="M2" EXPECTED_MEMORY_GB=24 EXPECTED_STORAGE_GB=512 \
+./macbook-audit-v2.sh | tee "macbook-audit-$(date '+%Y-%m-%d-%H%M%S').txt"
+```
+
+and
+
+```bash
+chmod +x macbook-audit-v3.sh
+EXPECTED_CHIP="M2" EXPECTED_MEMORY_GB=24 EXPECTED_STORAGE_GB=512 \
+./macbook-audit-v3.sh | tee "macbook-audit-$(date '+%Y-%m-%d-%H%M%S').txt"
 ```
 
 ## What Does the Audit Script Do?

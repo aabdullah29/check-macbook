@@ -5,6 +5,17 @@
 # It does NOT prove Activation Lock status, physical condition,
 # original parts, or absence of hidden/intermittent faults.
 
+# MacBook Used-Purchase Audit
+# Read-only automated audit. Manual tests and Apple Diagnostics are still required.
+#
+# Optional expected values:
+#   chmod +x macbook-audit.sh
+#   ./macbook-audit.sh
+#
+# Save while displaying:
+#   chmod +x macbook-audit.sh
+#   ./macbook-audit.sh | tee "macbook-audit-$(date '+%Y-%m-%d-%H%M%S').txt"
+
 set +e
 
 echo "============================================================"
